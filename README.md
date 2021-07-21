@@ -13,6 +13,7 @@
 ## Introduction
 
   
+Forked from (https://www.npmjs.com/package/react-native-hgraph) for the purposes of MedRecord. 
 
 This is a React Native native implementation of the [hGraph](http://hgraph.org/) library. hGraph is a visual representation of a patient's health status, designed to increase awareness of the individual's factors that can affect one's overall health.
 
