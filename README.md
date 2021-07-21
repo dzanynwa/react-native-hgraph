@@ -120,6 +120,8 @@ Name | Default | Type | Description
 
 ## Usage
 ```javascript
+// LIST OF AVAILABLE METRICS: BODY_MASS_INDEX, BODY_WEIGHT, BODY_HEIGHT, WAIST_HEIGHT_RATIO, HBA1C, BLOOD_GLUCOSE, BLOOD_PRESSURE_SYSTOLIC, BLOOD_PRESSURE_DIASTOLIC, WAIST_CIRCUMFERENCE
+
 import  HGraph, {
 	hGraphConvert,
 } from  'medrecord-react-native-hgraph';
