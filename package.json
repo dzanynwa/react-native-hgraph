@@ -1,6 +1,6 @@
 {
   "name": "@medrecord/react-native-hgraph",
-  "version": "0.5.0",
+  "version": "0.0.1",
   "description": "React Native implementation of hGraph for MedRecord",
   "main": "index.js",
   "scripts": {
