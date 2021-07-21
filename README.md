@@ -122,108 +122,16 @@ Name | Default | Type | Description
 ```javascript
 import  HGraph, {
 	hGraphConvert,
-	calculateHealthScore
-} from  'react-native-hgraph';
+} from  'medrecord-react-native-hgraph';
 ...
-const  totalCholesterolValue  = (1-0)*Math.random();
-const  ldlValue  = (300-0)*Math.random();
-const  hdlValue  = (150-0)*Math.random();
-const  triglyceridesValue  = (300-0)*Math.random();
-const  bloodPressureSystolicValue  = (230-50)*Math.random();
-const  bloodPressureDiastolicValue  = (140-35)*Math.random();
-const  alcoholUseValue  = (20-0)*Math.random();
-const  nicotineUseValue  = (20-0)*Math.random();
-const  painLevelValue  = (10-0)*Math.random();
-const  waistCircumferenceValue  = (200-0)*Math.random();
-const  weightValue  = (400-50)*Math.random();
-const  exerciseValue  = (60-0)*Math.random();
-const  sleepValue  = (18-0)*Math.random();
-const  happinessValue  = (10-0)*Math.random();
-const  glucoseValue  = (160-0)*Math.random();
-const  otherValue  = (1-0)*Math.random();
 const  healthData  = [
-hGraphConvert('male', 'totalCholesterol',
+hGraphConvert('male', 'BODY_MASS_INDEX',
 {
-	id :  'totalCholesterol',
-	"value" :  totalCholesterolValue
+	id :  'BODY_MASS_INDEX',
+	value :  22.5, 
+	helpText: 'Normal range',
 }),
-hGraphConvert('male', 'ldl',
-{
-	id :  'ldl',
-	"value" :  ldlValue
-}),
-hGraphConvert('male', 'hdl',
-{
-	id :  'hdl',
-	"value" :  hdlValue
-}),
-hGraphConvert('male', 'triglycerides',
-{
-	id :  'triglycerides',
-	"value" :  triglyceridesValue
-}),
-hGraphConvert('male', 'bloodPressureSystolic',
-{
-	id :  'bloodPressureSystolic',
-	"value" :  bloodPressureSystolicValue
-}),
-hGraphConvert('male', 'bloodPressureDiastolic',
-{
-	id :  'bloodPressureDiastolic',
-	"value" :  bloodPressureDiastolicValue
-}),
-hGraphConvert('male', 'alcoholUse',
-{
-	id :  'alcoholUse',
-	"value" :  alcoholUseValue
-}),
-hGraphConvert('male', 'nicotineUse',
-{
-	id :  'nicotineUse',
-	"value" :  nicotineUseValue
-}),
-hGraphConvert('male', 'painLevel',
-{
-	id :  'painLevel',
-	"value" :  painLevelValue
-}),
-hGraphConvert('male', 'waistCircumference',
-{
-	id :  'waistCircumference',
-	"value" :  waistCircumferenceValue
-}),
-hGraphConvert('male', 'weight',
-{
-	id :  'weight',
-	"value" :  weightValue
-}),
-hGraphConvert('male', 'exercise',
-{
-	id :  'exercise',
-	"value" :  exerciseValue
-}),
-hGraphConvert('male', 'sleep',
-{
-	id :  'sleep',
-	"value" :  sleepValue
-}),
-hGraphConvert('male', 'happiness',
-{
-	id :  'happiness',
-	"value" :  happinessValue
-}),
-hGraphConvert('male', 'glucose',
-{
-	id :  'glucose',
-	"value" :  glucoseValue
-}),
-hGraphConvert('male', 'other',
-{
-	id :  'other',
-	"value" :  otherValue
-}),
-]
-const  healthScore  =  Math.floor(calculateHealthScore(healthData));
+
 ...
 <HGraph
 	width= {200}
@@ -236,6 +144,6 @@ const  healthScore  =  Math.floor(calculateHealthScore(healthData));
 		left:  100}}
 	showAxisLabel={true}
 	scoreFontSize= {50}
-	data= {}
+	data= {healthData}
 />
 ```
