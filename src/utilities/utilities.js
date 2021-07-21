@@ -1,4 +1,4 @@
-import metrics from "react-native-hgraph/src/data/metrics.json";
+import metrics from "medrecord-react-native-hgraph/src/data/metrics.json";
 
 const hGraphConvert = (gender, metric, data) => {
   const metricObj = metrics[gender][metric];
